@@ -30,6 +30,7 @@ public class WeChatController {
     //测试号
     private String appId="wxdba63f4cfbc5a7e5";
     private String secret="8bd74339ad982d840fa88f89a8d0b12e";
+    private String token = "luck";
 
     //订阅号 ，无法使用
 //    private String appId="wx5c710107c5c9b101";
@@ -75,7 +76,7 @@ public class WeChatController {
         log.info("echostr: "+ echostr);
         log.info("timestamp: "+ timestamp);
         log.info("nonce: "+ nonce);
-        String sginStr = SignUtil.checkSignature(signature, timestamp, nonce);
+        String sginStr = SignUtil.checkSignature(signature, timestamp, nonce,token);
         log.info(sginStr);
         return echostr;
     }

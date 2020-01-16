@@ -6,8 +6,14 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 @Slf4j
 public class SignUtil {
-    private static String token = "luck";
-    public static String checkSignature(String signature, String timestamp, String nonce) {
+    /**
+     * @param signature
+     * @param timestamp
+     * @param nonce
+     * @param token
+     * @return
+     */
+    public static String checkSignature(String signature, String timestamp, String nonce, String token) {
         String[] arr = new String[] { token, timestamp, nonce };
         // 将token、timestamp、nonce三个参数进行字典序排序
         Arrays.sort(arr);
