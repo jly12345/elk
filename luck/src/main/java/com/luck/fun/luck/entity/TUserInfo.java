@@ -14,9 +14,9 @@ public class TUserInfo implements Serializable {
 
     private static final long serialVersionUID = -4598120297410948476L;
     private String tenantNo;
-    @TableId
-    private String appid;
 
+    private String appid;
+    @TableId
     private String openid;
 
     private String uinfo;
