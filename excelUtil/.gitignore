@@ -1,0 +1,17 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+target
+*.iml
+.gitignore
+.idea/$CACHE_FILE$
+.idea/$PRODUCT_WORKSPACE_FILE$
+.idea/.gitignore
+.idea/artifacts/
+.idea/codeStyles/
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/vcs.xml
+excelUtil.iml
+target/
